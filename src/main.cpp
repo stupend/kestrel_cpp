@@ -5,5 +5,7 @@ int main()
 {
     std::cout<<("hello world. \n");
     kestrel_client kc;
-    kc.put("","",1);
+    char * queueName = "test";
+    char * message = "test";
+    kc.put(queueName,message,1);
 }
